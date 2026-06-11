@@ -15,13 +15,14 @@ update_os
 msg_info "Installing Dependencies"
 $STD apt install -y \
   build-essential \
+  jq \
   libcairo2-dev \
-  libjpeg62-turbo-dev \
+  libturbojpeg0 \
   libpng-dev \
   libtool-bin \
-  uuid-dev \
+  libossp-uuid-dev \
   libvncserver-dev \
-  freerdp3-dev \
+  freerdp2-dev \
   libssh2-1-dev \
   libtelnet-dev \
   libwebsockets-dev \
@@ -33,7 +34,8 @@ $STD apt install -y \
   libswscale-dev \
   libavcodec-dev \
   libavutil-dev \
-  libavformat-dev
+  libavformat-dev \
+  default-jdk
 msg_ok "Installed Dependencies"
 
 JAVA_VERSION="17" setup_java
