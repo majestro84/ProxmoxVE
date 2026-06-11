@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Copyright (c) 2021-2026 majestro84 ORG
-# License: MIT | https://raw.githubusercontent.com/majestro84/ProxmoxVE/main/LICENSE
+# Copyright (c) 2021-2026 community-scripts ORG
+# License: MIT | https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/LICENSE
 
 # ==============================================================================
 # CORE FUNCTIONS - LXC CONTAINER UTILITIES
@@ -11,7 +11,7 @@
 # execution helpers used throughout the majestro84 ecosystem.
 #
 # Usage:
-#   source <(curl -fsSL https://git.majestro84.org/.../core.func)
+#   source <(curl -fsSL https://git.community-scripts.org/.../core.func)
 #   load_functions
 #
 # ==============================================================================
