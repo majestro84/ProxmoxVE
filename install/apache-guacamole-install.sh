@@ -53,8 +53,8 @@ msg_ok "Setup Apache Tomcat ${TOMCAT_VERSION}"
 
 msg_info "Setup Apache Guacamole"
 mkdir -p /etc/guacamole/{extensions,lib}
-GUAC_SERVER_VERSION="1.5.5"
-GUAC_CLIENT_VERSION="1.5.5"
+GUAC_SERVER_VERSION=1.5.5
+GUAC_CLIENT_VERSION=1.5.5
 MYSQL_CONNECTOR_VERSION=$(curl -fsSL "https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/maven-metadata.xml" | grep -oP '<latest>\K[^<]+')
 curl -fsSL "https://api.github.com/repos/apache/guacamole-server/tarball/refs/tags/${GUAC_SERVER_VERSION}" | tar -xz --strip-components=1 -C /opt/apache-guacamole/server
 cd /opt/apache-guacamole/server
