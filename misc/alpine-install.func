@@ -1,7 +1,7 @@
 # Copyright (c) 2021-2026 majestro84 ORG
 # Author: tteck (tteckster)
 # Co-Author: MickLesk
-# License: MIT | https://github.com/majestro84/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
 
 if ! command -v curl >/dev/null 2>&1; then
   apk update && apk add curl >/dev/null 2>&1
@@ -111,7 +111,7 @@ network_check() {
   fi
 
   # DNS resolution checks for GitHub-related domains
-  GIT_HOSTS=("github.com" "raw.githubusercontent.com" "api.github.com" "git.majestro84.org")
+  GIT_HOSTS=("github.com" "raw.githubusercontent.com" "api.github.com" "git.community-scripts.org")
   GIT_STATUS="Git DNS:"
   DNS_FAILED=false
 
