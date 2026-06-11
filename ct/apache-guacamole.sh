@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 source <(curl -fsSL https://raw.githubusercontent.com/majestro84/ProxmoxVE/main/misc/build.func)
-# Copyright (c) 2021-2026 majestro84 ORG
+# Copyright (c) 2021-2026 community-scripts ORG
 # Author: Michel Roegl-Brunner (michelroegl-brunner)
-# License: | MIT https://github.com/majestro84/ProxmoxVE/raw/main/LICENSE
+# License: | MIT https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
 # Source: https://guacamole.apache.org/
 
 APP="Apache-Guacamole"
