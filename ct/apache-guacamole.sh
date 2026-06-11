@@ -31,8 +31,8 @@ function update_script() {
 
   # Fetch latest versions
   LATEST_TOMCAT=$(curl -fsSL https://dlcdn.apache.org/tomcat/tomcat-9/ | grep -oP '(?<=href=")v[^"/]+(?=/")' | sed 's/^v//' | sort -V | tail -n1)
-  LATEST_SERVER="1.5.5"
-  LATEST_CLIENT="1.5.5"
+  LATEST_SERVER=1.5.5
+  LATEST_CLIENT=1.5.5
   LATEST_MYSQL_CONNECTOR=$(curl -fsSL "https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/maven-metadata.xml" | grep -oP '<latest>\K[^<]+')
 
   # Read current versions from ~/.guacamole_*
